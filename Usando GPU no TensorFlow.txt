@@ -1,0 +1,33 @@
+1° Passo:
+Baixar o CUDA Toolkit versão 11.2 (.exe) diretamente do site da Nvidia
+Executar o arquivo e seguir os passos apresentados
+
+2° Passo:
+Baixar o cuDNN versão 8.1 (.zip) diretamente do site da Nvidia, para isso será necessário uma conta de desenvolvedor
+
+3° Passo:
+Extrair o arquivo .zip do cuDNN e copiar os arquivos para dentro das referentes pastas de instalação do CUDA Toolkit, por exemplo, os arquivos da pasta cuDNN cudnn-11.2-windows-x64-v8.1.0.77\cuda\bin
+devem ser copiados para a pasta C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin
+
+4° Passo:
+Adicionar a pasta C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin à variável de ambiente PATH, pode ser usado os códigos
+"
+SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\bin;%PATH%
+SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\extras\CUPTI\lib64;%PATH%
+SET PATH=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.0\include;%PATH%
+"
+Mais informações em: https://www.tensorflow.org/install/gpu?hl=pt-br
+
+5° Passo:
+Instalar o python versão 3.9.13 disponível em: https://www.python.org/downloads/release/python-3913/
+
+6° Passo:
+Criar uma venv, com ela ativada serão realizados os próximos passos
+
+7° Passo:
+Baixar especificamente a versão 2.10.x do TensorFlow, versões mais recentes não funcionarão, pois o pacote passou a ser atualizado pela intel.
+pip install "tensorflow<2.11" 
+
+8° Passo:
+Ele virá com a versão incorreta do numpy, por isso ela deverá ser reinstalada para a versão 1.23.2:
+pip install --upgrade numpy==1.23.2
