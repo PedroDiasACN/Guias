@@ -1,0 +1,3 @@
+1° Passo:
+Baixar o CUDA Toolkit versão 11.2 (.exe) diretamente do site da Nvidia
+Executar o arquivo e seguir os passos apresentados
