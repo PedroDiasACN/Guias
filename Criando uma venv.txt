@@ -1,0 +1,11 @@
+1° Passo:
+Abra o Prompt de Comando e utilize "cd/" para voltar para o diretório primário.
+
+2° Passo:
+Utilize "cd (diretório final)" para navegar até o diretório no qual você quer criar a sua env.
+
+3° Passo:
+Abra as variáveis de ambiente do seu sistema e verifique se a versão correta do python está selecionada.
+
+4° Passo:
+Utilize o comando "python -m venv (nome da venv)" para efetivamente criar a sua venv.
