@@ -9,4 +9,7 @@ Baixar o cuDNN versão 8.9.7 (.zip) diretamente do site da Nvidia Archive (https
 Extrair o arquivo .zip do cuDNN e copiar os arquivos para dentro das referentes pastas de instalação do CUDA Toolkit, por exemplo, os arquivos da pasta cudnn-windows-x86_64-8.9.7.29_cuda12-archive (para windows).
 devem ser copiados para a pasta C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin (local de instalação padrão do CUDA).
 
-Com isso feito, o meu Yolo já passou a utilizar a placa de vídeo corretamente ;)
+4° Passo:
+Ao instalarmos o Ultralytics em nossa venv por meio comando "pip install ultralytics", a versão do pytorch que virá com ele não será compatível com o CUDA. Devemos consertar isso.
+
+Com isso feito, o Yolo passará a utilizar a placa de vídeo corretamente ;)
