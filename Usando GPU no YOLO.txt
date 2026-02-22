@@ -5,14 +5,18 @@ Baixar o CUDA Toolkit versão 12.4 (.exe) para o Yolo11 ou versão 12.9 (.exe) p
 Executar o arquivo e seguir os passos apresentados.
 
 2° Passo:
-Baixar o cuDNN versão 8.9.7 (.zip) diretamente do site da Nvidia Archive (https://developer.nvidia.com/rdp/cudnn-archive), ele funciona para todos os CUDA 1.12.
+Baixar o cuDNN versão 8.9.7 (.zip) diretamente do site da Nvidia Archive (https://developer.nvidia.com/rdp/cudnn-archive), ele funciona para todos os CUDA 1.12.X.
 
 3° Passo:
 Extrair o arquivo .zip do cuDNN e copiar os arquivos para dentro das referentes pastas de instalação do CUDA Toolkit, por exemplo:
-Os arquivos da pasta cudnn-windows-x86_64-8.9.7.29_cuda12-archive (para windows)
-devem ser copiados para a pasta C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin (local de instalação padrão do CUDA).
+Os arquivos da pasta cudnn-windows-x86_64-8.9.7.29_cuda12-archive\bin (para windows) devem ser copiados para a pasta C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin (local de instalação padrão do CUDA).
 
 4° Passo:
 Ao instalarmos o Ultralytics em nossa venv por meio comando "pip install ultralytics", a versão do pytorch que virá com ele não será compatível com o CUDA. Devemos consertar isso.
+
+5° Passo:
+Iremos para o site "https://pytorch.org/get-started/previous-versions/" e escolhemos a versão correta para o nosso pytorch, sendo a 2.5.1 para o Yolo11 e 2.8.0 para o Yolo26.
+Assim, obteremos os comandos "pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124" para o Yolo11
+E "pip install torch==2.8.0 torchvision==0.23.0 torchaudio==2.8.0 --index-url https://download.pytorch.org/whl/cu129" para o Yolo26
 
 Com isso feito, o Yolo passará a utilizar a placa de vídeo corretamente ;)
