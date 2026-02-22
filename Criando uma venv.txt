@@ -9,3 +9,6 @@ Abra as variáveis de ambiente do seu sistema e verifique se a versão correta d
 
 4° Passo:
 Utilize o comando "python -m venv (nome da venv)" para efetivamente criar a sua venv.
+
+5° Passo:
+Utilize o comando "cd (diretório da venv)/scripts" para navegar até a pasta dos scripts da venv e escreva "activate" para ativá-la. Depois disso é só "pip install" tudo o que precisar.
